@@ -1,8 +1,4 @@
-// Copyright 2022 - Samson Huang
-// Email: shuang18@mail.sfsu.edu
-// CSC340.02 - Spring 2022 
 // This file is part of CSC 340 - Assignment 3.1
-
 
 /* Summary:
     This program will take a sentence from the user. Then the program will output the words in the 
@@ -10,15 +6,12 @@
     the sentence is a palindrome.
 */
 
-
 #include <iostream>
 #include <stack>
 #include <string>
 #include "Stack.h"
 
-
 using namespace std;
-
 
 // Reversing the string
 void reverse(string item){
@@ -42,7 +35,6 @@ void reverse(string item){
     cout << endl;
 }
 
-
 void palindrome(string item){
     stack<string> palStack;
     string temp = ""; // temporary space holder
@@ -58,7 +50,6 @@ void palindrome(string item){
     item = temp;
 }
 
-
 bool palindromeCheck(string input, int num){
     int middle = input.size()/2;
     if(num > middle){
@@ -67,7 +58,6 @@ bool palindromeCheck(string input, int num){
     // checking if index is equal to opposite index of string and changing the bounds
     return input[num] == input[input.size() - num - 1] && palindromeCheck(input, num + 1);
 }
-
 
 int main(){
 

@@ -9,22 +9,17 @@
 
 #include <iostream>
 
-
 using namespace std;
-
 
 /* Program Design: 
     We want to take a 5-digit number from the user, convert it into a string, and use for-loop to print each index of the string
     with 3 spaces in between
 */
 
-
 int main(){
-
-
+    
     // Initializing Variables
     int user_input; 
-
 
     // Taking the user's input
     cout << "Input a 5 digit number: \n";
@@ -33,7 +28,6 @@ int main(){
     //TODO: Maybe there's another way to approach this instead of converting "int" to "string" datatype
     // Converting the user's input into String
     string converted_input = to_string(user_input); 
-
 
     // Using For-Loop to print out each index of the String
     for (int i=0; i < 5; i++) 

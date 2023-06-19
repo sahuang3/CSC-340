@@ -1,14 +1,11 @@
 // This file is part of CSC 340 - Assignment 1
 
-
 /* Summary:
     This program will take the user's input of 10 numbers and put it into an array. Then, it compares the length of each
     increasing subsequence and prints out the longest increasing subsequence within the given array.
 */
 
-
 #include <iostream>
-
 
 using namespace std;
 
@@ -19,6 +16,7 @@ using namespace std;
     we compare: max length of LIS < count, if that's true then copy the temporary array into the LIS array and change the
     max length to the count. Lastly, the count gets reset and there's a for loop to printout the LIS.
 */
+
 void ArrayLIS(int arr[], int size) {
 
     // Initializing variables
@@ -54,7 +52,6 @@ void ArrayLIS(int arr[], int size) {
         cout << lis[i] << " ";
     }
 }
-
 
 int main(){
 

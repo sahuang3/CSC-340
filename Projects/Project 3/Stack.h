@@ -1,6 +1,3 @@
-// Copyright 2022 - Samson Huang
-// Email: shuang18@mail.sfsu.edu
-// CSC340.02 - Spring 2022 
 // This file is part of CSC 340 - Assignment 3.1
 
 #ifndef STACK_

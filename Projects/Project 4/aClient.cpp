@@ -9,7 +9,6 @@
 
 using namespace std;
 
-
 LinkedList<string>* convertToList(vector<string> data)
 {
   LinkedList<string>* ptr = new LinkedList<string>();
@@ -22,25 +21,20 @@ LinkedList<string>* convertToList(vector<string> data)
   return ptr;
 }
 
-
 void print(const string& str) {
   cout << "\n---------------------------------\n";
   cout << str;
   cout << "\n---------------------------------\n";
 }
 
-
 int main()
 {
-
   vector<string> weekdays = {"Mon", "Tue", "Wed", "thu", "Fri"};
   vector<string> weekend = {"Sat", "sun"};
 
-  
   print("Test replace");
   LinkedList<string>* listPtr1 = convertToList(weekdays);
   cout << "List 1: " << *listPtr1 << endl;;
-  
   
   cout << "Replace `thu` with `Thu`\n";
   try {
@@ -62,14 +56,12 @@ int main()
     cout << "Caught an exception replacing list1 at position " << pos << endl;
   }
   
-  
   LinkedList<string>* listPtr2 = convertToList(weekend);
   cout << "\nList 2: " << *listPtr2 << endl;
   cout << "Replace `sun` with `Sun`\n";
   string replaced2 = listPtr2->replace(listPtr2->getLength(), "Sun");
   cout << "The replaced item: " << replaced2 << endl;
   cout << "List 2: " << *listPtr2 << endl;
-  
   
   print("Test copy constructor");
   cout << "Create list 3 as a copy of list 2 \n";
@@ -85,7 +77,6 @@ int main()
   cout << "List 2: " << *listPtr2 << endl;
   cout << "List 3: " << list3 << endl;
   
-  
   print("Test operator+");
   cout << "Assign list4 = list3 + list1 + list3\n";
   LinkedList<string> list4 = list3 + *listPtr1 + list3;
@@ -96,7 +87,6 @@ int main()
   cout << "Remove the last node\n";
   list4.remove(list4.getLength());
   cout << "List 4: " << list4 << endl;
-  
   
   print("Test assignment operator");
   cout << "List 1: " << *listPtr1 << endl;
@@ -115,7 +105,6 @@ int main()
   cout << "List 1: " << *listPtr1 << endl;
   cout << "List 2: " << *listPtr2 << endl;
   cout << "List 5: " << list5 << endl;
-  
   
   print("Test operator==");
   LinkedList<string>* listPtr6 = convertToList(weekdays);
@@ -139,4 +128,3 @@ int main()
 
   return 0;
 }
-

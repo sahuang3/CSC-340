@@ -1,7 +1,4 @@
-// Copyright 2022 - Samson Huang
-// Email: shuang18@mail.sfsu.edu
 // This file is part of CSC 340 - Assignment 2
-
 
 /* Summary:
     This program will take the user's input of any string. Then the program will check if the word given by the 
@@ -9,12 +6,10 @@
     "False".
 */
 
-
 #include <iostream>
 #include <string>
 
 using namespace std;
-
 
 /* Program Design: 
     We want to take a string from the user. Then we will convert the string into only lowercase characters in the 
@@ -23,7 +18,6 @@ using namespace std;
     another function to check if the string is a palindrome using recursion. If the string is a palindrome, 
     the output will be true, otherwise it will be false.
 */
-
 
 bool palindrome(string input, int first, int last){
 
@@ -44,6 +38,7 @@ bool palindrome(string input, int first, int last){
     was to use 2 functions where we have to solve for the palindrome and check if it's a palindrome. But if there
     was a way to implement this into a singular function, this would definitely be something I should improve on. 
 */
+
 bool palindromeCheck(string input){
 
     int size = input.length();
@@ -52,7 +47,6 @@ bool palindromeCheck(string input){
     }
     return palindrome(input, 0, size-1);
 }
-
 
 int main(){
     

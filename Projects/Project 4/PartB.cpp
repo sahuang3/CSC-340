@@ -1,3 +1,5 @@
+// Copyright 2022, Samson Huang, All rights reserved.
+
 #include <iostream>
 
 using namespace std;

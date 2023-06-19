@@ -1,11 +1,9 @@
 // This file is part of CSC 340 - Assignment 1
 
-
 /* Summary:
     This program will take the user's input of any 5-digit numbers and converts their input from the datatypes "int" into 
     a "string". Then, it will print each index of the string with 3 spaces in between each number.
 */
-
 
 #include <iostream>
 

@@ -1,7 +1,4 @@
-// Copyright 2022 - Samson Huang
-// Email: shuang18@mail.sfsu.edu
 // This file is part of CSC 340 - Assignment 2
-
 
 /* Summary:
     This program is a memory game where a few words will flash onto the screen and you have 1 second to 
@@ -10,7 +7,6 @@
     Every 4 points you get will increase the difficulty by 1 word. The program will stop when you enter 'q' or
     if you have more than 10 points.
 */
-
 
 #ifdef _WIN32
 #include <Windows.h>
@@ -25,7 +21,6 @@
 
 using namespace std;
 
-
 /* Program Design: 
     First, we need to initialize a string array with all the words. Then, we ask if the user wants to play the 
     game by having them type 'y' or 'n'. We will then generate random words using a random number generator 
@@ -38,9 +33,7 @@ using namespace std;
     to stop.
 */
 
-
 int main(){
-
 
     cls();
     const int totalWords = 49;
@@ -56,7 +49,6 @@ int main(){
     int points = 0;
     string userInput[size];
 
-
     // Game Introduction
     cout << "--------------------------------------------------------------------------------------------\n";
     cout << "Hello welcome to my adaptive memory game. \n\n";
@@ -67,7 +59,6 @@ int main(){
     cout << "The game will automatically closes when you've reached 10 points.\n";
     cout << "--------------------------------------------------------------------------------------------\n";
     cout << "Start the game (Y/N)? ";
-
 
     // Start Game, 'y' or 'n'
     char userPlay;

@@ -1,6 +1,3 @@
-// Copyright 2022 - Samson Huang
-// Email: shuang18@mail.sfsu.edu
-// CSC340.02 - Spring 2022 
 // This file is part of CSC 340 - Assignment 3.2
 
 #include <iostream>
@@ -14,7 +11,6 @@ struct Node {
   Node(int x) : val(x), next(nullptr) {}
   Node(int x, Node* next) : val(x), next(next) {}
 };
-
 
 /// <summary>
 /// This is where you will implement your solution to the problem:
@@ -121,7 +117,6 @@ Node* addTwoNumbers(Node* first, Node* second) {
 
   return res;
 }
-
 
 void test(Node* res, Node* key, int testNumber) {
   while (key != nullptr) {

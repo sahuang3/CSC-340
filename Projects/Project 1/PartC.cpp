@@ -1,3 +1,4 @@
+// Copyright 2022, Samson Huang, All rights reserved.
 // This file is part of CSC 340 - Assignment 1
 
 /* Summary:

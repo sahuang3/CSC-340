@@ -1,5 +1,3 @@
-// Copyright 2022 - Samson Huang
-// Email: shuang18@mail.sfsu.edu
 // This file is part of CSC 340 - Assignment 1
 
 
